@@ -2,8 +2,11 @@
 
 Node installation redhat7
 For Latest Release:-
+
 step 1:
+
 sudo yum install -y gcc-c++ make
+
 sudo curl -sL https://rpm.nodesource.com/setup_9.x | sudo -E bash -
 
 Step 2 – Install Node.js and NPM
@@ -11,9 +14,13 @@ Step 2 – Install Node.js and NPM
 sudo yum install -y nodejs
 
 Step 3 – Check Node.js and NPM Version
+
 node -v 
-npm -v 
+
+npm -v
+
 Step 4 – Create Demo Web Server (Optional)
+
 vim demo_server.js
 
 var http = require('http');
@@ -23,7 +30,9 @@ http.createServer(function (req, res) {
 }).listen(3001, "127.0.0.1");
 console.log('Server running at http://127.0.0.1:3001/');
 
+
 node --inspect demo_server.js
+
 
 debugger listening on port 5858
 Server running at http://127.0.0.1:3001/
